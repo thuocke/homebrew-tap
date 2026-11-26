@@ -1,39 +1,32 @@
 # thuocke/tap
 
-A Homebrew tap with one cask: [Soos](https://github.com/thuocke/soos), a
-notepad-style calculator for macOS.
+Ruler's Homebrew tap: casks for the apps published at
+[github.com/thuocke](https://github.com/thuocke).
 
-## Install
+## Casks
+
+| Cask | App | Install |
+|---|---|---|
+| `soos` | [Soos](https://github.com/thuocke/soos), a calculator you type into like a notepad | `brew install --cask thuocke/tap/soos` |
+
+## Use a cask
+
+Each command takes the cask's name from the table; these use `soos`.
 
 ```
 brew install --cask thuocke/tap/soos
-```
-
-This puts Soos in Applications and `soos-cli` on your `PATH`. Soos isn't
-signed yet, and the cask clears macOS's quarantine flag itself, so Soos opens
-without a warning.
-
-## Upgrade
-
-```
 brew upgrade --cask soos
-```
-
-## Uninstall
-
-```
 brew uninstall --cask soos
 ```
 
-This keeps your tabs and settings, which live in
-`~/Library/Application Support/Soos/`. Add `--zap` to delete them too:
+`brew uninstall --cask --zap soos` also deletes the app's own data. Each
+app's repository says what its cask installs and where its data is kept.
 
-```
-brew uninstall --cask --zap soos
-```
+## Soos
 
-## More
-
-The [Soos repository](https://github.com/thuocke/soos) has the guide. For
-manual installs, updating and uninstalling, see
-[Install help](https://github.com/thuocke/soos/blob/main/docs/install-help.md).
+The cask puts Soos in Applications and `soos-cli` on your `PATH`. Soos isn't
+signed yet, and the cask clears macOS's quarantine flag itself, so Soos
+opens without a warning. Your tabs and settings are in
+`~/Library/Application Support/Soos/`, which a plain uninstall keeps.
+[Install Soos](https://github.com/thuocke/soos/blob/main/docs/install-help.md)
+covers installing without Homebrew.

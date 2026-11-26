@@ -1,10 +1,10 @@
 cask "soos" do
-  version "1.0.5"
-  sha256 "2ef5e2495e46837697c517cd84700e72638d6f60496426c452efdf83155082f8"
+  version "1.1.0"
+  sha256 "46d3787a44dcfbc0cb121e455f38cd34ca4e5ce0053bbdccc18078e15beebc45"
 
   url "https://github.com/thuocke/soos/releases/download/v#{version}/Soos.dmg"
   name "Soos"
-  desc "Notepad-style calculator"
+  desc "Calculator you type into like a notepad"
   homepage "https://github.com/thuocke/soos"
 
   livecheck do
